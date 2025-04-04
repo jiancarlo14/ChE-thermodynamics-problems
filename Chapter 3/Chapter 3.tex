@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[version=4]{mhchem}
+\usepackage{textgreek}
+\usepackage{siunitx}
+%\usepackage{biblatex}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\title{Chapter 3 Problems}
+%\bibliography{}
+
+\newenvironment{solution}{\par\noindent\textbf{\\Solution:\\}}{\par\medskip}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section*{Problem 3.1}
+\addcontentsline{toc}{section}{Problem 3.1}
+How many phase rule variables must be specified to fix the thermodynamic state of each of the following systems?
+\begin{enumerate}[label=(\alph*)]
+      \item A sealed flask containing a liquid ethanol-water mixture in equilibrium with its vapor.
+      \item A sealed flask containing a liquid ethanol-water mixture in equilibrium with its vapor and nitrogen.
+      \item A sealed flask containing ethanol, toluene, and water as two liquid phases plus vapor.
+\end{enumerate}
+
+\begin{solution}
+      Using the phase rule, $F=2-\pi+N$.
+      \begin{enumerate}[label=(\alph*)]
+            \item $N=2$ and $\pi=2$ so $\boxed{ F=2 }$
+            \item $N=3$ and $\pi=2$ so $\boxed{ F=3 }$
+            \item $N=3$ and $\pi=3$ so $\boxed{ F=2 }$
+      \end{enumerate}
+\end{solution}
+
+\section*{Problem 3.2}
+\addcontentsline{toc}{section}{Problem 3.2}
+A renowned laboratory reports quadruple-point coordinates of 10.2 Mbar and 24.1$^\circ$C for four-phase equilibrium of allotropic solid forms of the exotic chemical $\beta$-miasmone. Evaluate the claim.
+
+\begin{solution}
+      \begin{equation*}
+            F=2-\pi+N
+      \end{equation*}
+      If $N=1$ and $\pi=4$, the phase rule suggests that $F=-1$. The claim is impossible unless there are other components present in the system.
+\end{solution}
+
+\section*{Problem 3.3}
+\addcontentsline{toc}{section}{Problem 3.3}
+A closed, nonreactive system contains species 1 and 2 in vapor/liquid equilibrium. Species 2 is a very light gas, essentially insoluble in the liquid phase. The vapor phase contains both species 1 and 2. Some additional moles of species 2 are added to the system, which is then restored to its initial temperature \( T \) and pressure \( P \). As a result of the process, does the total number of moles of liquid increase, decrease, or remain unchanged?
+
+\begin{solution}
+      The addition of species 2 increases the pressure inside the system. When allowed to return to initial conditions, some of the vapor should condense to the liquid phase thus increasing the total number of moles of the liquid.
+\end{solution}
+
+\section*{Problem 3.4}
+\addcontentsline{toc}{section}{Problem 3.4}
+A system comprised of chloroform, 1,4-dioxane, and ethanol exists as a two-phase vapor/liquid system at 50°C and 55 kPa. After the addition of some pure ethanol, the system can be returned to two-phase equilibrium at the initial T and P. In what respect has the system changed, and in what respect has it not changed?
+
+\begin{solution}
+      
+\end{solution}
+
+
+\end{document}
