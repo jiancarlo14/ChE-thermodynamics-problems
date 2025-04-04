@@ -8,9 +8,13 @@
 %\usepackage{biblatex}
 \usepackage{booktabs}
 \usepackage{enumitem}
+\usepackage{fbox}
+\usepackage{mathtools}
 
 \title{Chapter 3 Problems}
 %\bibliography{}
+
+\DeclareSIUnit{bar}
 
 \newenvironment{solution}{\par\noindent\textbf{\\Solution:\\}}{\par\medskip}
 
@@ -76,24 +80,64 @@ The addition of ethanol increases the $y_{EtOH}$ and $x_{\text{EtOH}}$ of the sy
 \addcontentsline{toc}{section}{Problem 3.5}
 For the system described in Prob. 3.4:
 \begin{enumerate}
-    \item[(a)] How many phase-rule variables in addition to T and P must be chosen so as to fix the compositions of both phases?
-    \item[(b)] If the temperature and pressure are to remain the same, can the overall composition of the system be changed (by adding or removing material) without affecting the compositions of the liquid and vapor phases?
+      \item[(a)] How many phase-rule variables in addition to $T$ and $P$ must be chosen so as to fix the compositions of both phases?
+      \item[(b)] If the temperature and pressure are to remain the same, can the overall composition of the system be changed (by adding or removing material) without affecting the compositions of the liquid and vapor phases?
 \end{enumerate}
+
+\begin{solution}
+\begin{enumerate}[label=(\alph*)]
+      \item 3 degrees of freedom.
+      \item One more intensive variable (mole fraction of one component) must be fixed in order to fix the intensive state of the system.
+\end{enumerate}
+\end{solution}
+
 
 \section*{Problem 3.6}
 \addcontentsline{toc}{section}{Problem 3.6}
 Express the volume expansivity and the isothermal compressibility as functions of density $\rho$ and its partial derivatives. For water at 50°C and 1 bar, $\kappa = 44.18 \times 10^{-6}$ bar$^{-1}$. To what pressure must water be compressed at 50°C to change its density by 1\%? Assume that $\kappa$ is independent of P.
+
+\begin{solution}
+\begin{gather*}
+\kappa\equiv\frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P} \\
+\int \kappa \, dP = \int -\rho \, d\left( \frac{1}{\rho} \right) \\
+\end{gather*}
+let $u=1/\rho$ \quad $\to$ \quad  $\rho\,d\left( 1/\rho \right)=1/u\,d\left( u \right)$:
+\begin{gather*}
+\kappa\Delta P = -\ln\left( \frac{u_{2}}{u_{1}} \right)= \ln\left( \frac{\rho_{2}}{\rho_{1}} \right) \\
+\left( 44.18\times10^{-6} \right)\left( P_{2}-1 \right)= \ln\left( 1.01 \right) \\
+\boxed{ P_{2}=226~\unit{ \bar } }
+\end{gather*}
+\end{solution}
 
 \section*{Problem 3.7}
 \addcontentsline{toc}{section}{Problem 3.7}
 Generally, volume expansivity $\beta$ and isothermal compressibility $\kappa$ depend on T and P. Prove that:
 $$ \left(\frac{\partial \beta}{\partial P}\right)_T = -\left(\frac{\partial \kappa}{\partial T}\right)_P $$
 
+\begin{solution}
+\begin{gather*}
+\beta \equiv \frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P}, \qquad \kappa \equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+dV = \frac{1}{d\beta}\left( \frac{\partial V}{\partial T} \right)_{P} = \frac{-1}{d\kappa}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+-\left( \frac{\partial \kappa}{\partial T} \right)_{P}=\left( \frac{\partial \beta}{\partial P} \right)_{T}
+\end{gather*}
+\end{solution}
+
 \section*{Problem 3.8}
 \addcontentsline{toc}{section}{Problem 3.8}
 The Tait equation for liquids is written for an isotherm as:
 $$ V = V_0\left(1 - \frac{AP}{B+P}\right) $$
 where V is molar or specific volume, $V_0$ is the hypothetical molar or specific volume at zero pressure, and A and B are positive constants. Find an expression for the isothermal compressibility consistent with this equation.
+
+\begin{solution}
+\begin{align*}
+      \kappa &\equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+             &=\frac{-1}{V}\frac{d}{dP}\left[ V_{0}\left( 1-\frac{AP}{B+P} \right) \right]
+             \intertext{after differentiation:}
+             &=\frac{-1}{V}\left[ V_{0}A\left( B+P \right)^{-1}-V_{0}\left(  AP \right)\left( B+P \right)^{-2} \right]
+             \intertext{simplification:}
+      \Aboxed{ $\kappa & = \dfrac{-V_{0}}{V}\left[ \dfrac{A}{B+P} - \dfrac{AP}{\left( B+P \right)^{2}} \right]$ }
+\end{align*}
+\end{solution}
 
 \section*{Problem 3.9}
 \addcontentsline{toc}{section}{Problem 3.9}
