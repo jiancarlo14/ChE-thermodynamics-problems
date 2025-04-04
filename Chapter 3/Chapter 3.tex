@@ -29,12 +29,12 @@ How many phase rule variables must be specified to fix the thermodynamic state o
 \end{enumerate}
 
 \begin{solution}
-      Using the phase rule, $F=2-\pi+N$.
-      \begin{enumerate}[label=(\alph*)]
-            \item $N=2$ and $\pi=2$ so $\boxed{ F=2 }$
-            \item $N=3$ and $\pi=2$ so $\boxed{ F=3 }$
-            \item $N=3$ and $\pi=3$ so $\boxed{ F=2 }$
-      \end{enumerate}
+Using the phase rule, $F=2-\pi+N$.
+\begin{enumerate}[label=(\alph*)]
+      \item $N=2$ and $\pi=2$ so $\boxed{ F=2 }$
+      \item $N=3$ and $\pi=2$ so $\boxed{ F=3 }$
+      \item $N=3$ and $\pi=3$ so $\boxed{ F=2 }$
+\end{enumerate}
 \end{solution}
 
 \section*{Problem 3.2}
@@ -42,10 +42,10 @@ How many phase rule variables must be specified to fix the thermodynamic state o
 A renowned laboratory reports quadruple-point coordinates of 10.2 Mbar and 24.1$^\circ$C for four-phase equilibrium of allotropic solid forms of the exotic chemical $\beta$-miasmone. Evaluate the claim.
 
 \begin{solution}
-      \begin{equation*}
-            F=2-\pi+N
-      \end{equation*}
-      If $N=1$ and $\pi=4$, the phase rule suggests that $F=-1$. The claim is impossible unless there are other components present in the system.
+\begin{equation*}
+      F=2-\pi+N
+\end{equation*}
+If $N=1$ and $\pi=4$, the phase rule suggests that $F=-1$. The claim is impossible unless there are other components present in the system.
 \end{solution}
 
 \section*{Problem 3.3}
@@ -53,7 +53,11 @@ A renowned laboratory reports quadruple-point coordinates of 10.2 Mbar and 24.1$
 A closed, nonreactive system contains species 1 and 2 in vapor/liquid equilibrium. Species 2 is a very light gas, essentially insoluble in the liquid phase. The vapor phase contains both species 1 and 2. Some additional moles of species 2 are added to the system, which is then restored to its initial temperature \( T \) and pressure \( P \). As a result of the process, does the total number of moles of liquid increase, decrease, or remain unchanged?
 
 \begin{solution}
-      The addition of species 2 increases the pressure inside the system. When allowed to return to initial conditions, some of the vapor should condense to the liquid phase thus increasing the total number of moles of the liquid.
+\begin{equation*}
+      N=2, \qquad \pi=2 \qquad \to \qquad F=2.
+\end{equation*}
+With constant temperature and pressure, the system's equilibrium is constrained. Introducing species 2 increases $y_2$ and decreases $y_1$. Therefore, to maintain the original vapor equilibrium, liquid species 1 must evaporate, resulting in a decrease in the total moles of liquid.
+
 \end{solution}
 
 \section*{Problem 3.4}
@@ -61,8 +65,57 @@ A closed, nonreactive system contains species 1 and 2 in vapor/liquid equilibriu
 A system comprised of chloroform, 1,4-dioxane, and ethanol exists as a two-phase vapor/liquid system at 50°C and 55 kPa. After the addition of some pure ethanol, the system can be returned to two-phase equilibrium at the initial T and P. In what respect has the system changed, and in what respect has it not changed?
 
 \begin{solution}
-      
+\begin{equation*}
+      N=3, \qquad \pi=2 \qquad \to \qquad F=3
+\end{equation*}
+
+The addition of ethanol increases the $y_{EtOH}$ and $x_{\text{EtOH}}$ of the system thus decreasing $\left( y_{\text{EtOH}} \right)'$ and $\left( x_{EtOH} \right)'$. Since only two \textit{independent} intensive variables were changed, the number of phases will remain unchanged. 
 \end{solution}
+
+\section*{Problem 3.5}
+\addcontentsline{toc}{section}{Problem 3.5}
+For the system described in Prob. 3.4:
+\begin{enumerate}
+    \item[(a)] How many phase-rule variables in addition to T and P must be chosen so as to fix the compositions of both phases?
+    \item[(b)] If the temperature and pressure are to remain the same, can the overall composition of the system be changed (by adding or removing material) without affecting the compositions of the liquid and vapor phases?
+\end{enumerate}
+
+\section*{Problem 3.6}
+\addcontentsline{toc}{section}{Problem 3.6}
+Express the volume expansivity and the isothermal compressibility as functions of density $\rho$ and its partial derivatives. For water at 50°C and 1 bar, $\kappa = 44.18 \times 10^{-6}$ bar$^{-1}$. To what pressure must water be compressed at 50°C to change its density by 1\%? Assume that $\kappa$ is independent of P.
+
+\section*{Problem 3.7}
+\addcontentsline{toc}{section}{Problem 3.7}
+Generally, volume expansivity $\beta$ and isothermal compressibility $\kappa$ depend on T and P. Prove that:
+$$ \left(\frac{\partial \beta}{\partial P}\right)_T = -\left(\frac{\partial \kappa}{\partial T}\right)_P $$
+
+\section*{Problem 3.8}
+\addcontentsline{toc}{section}{Problem 3.8}
+The Tait equation for liquids is written for an isotherm as:
+$$ V = V_0\left(1 - \frac{AP}{B+P}\right) $$
+where V is molar or specific volume, $V_0$ is the hypothetical molar or specific volume at zero pressure, and A and B are positive constants. Find an expression for the isothermal compressibility consistent with this equation.
+
+\section*{Problem 3.9}
+\addcontentsline{toc}{section}{Problem 3.9}
+For liquid water the isothermal compressibility is given by:
+$$ \kappa = \frac{c}{V(P+b)} $$
+where c and b are functions of temperature only. If 1 kg of water is compressed isothermally and reversibly from 1 to 500 bar at 60°C, how much work is required? At 60°C, b = 2700 bar and c = 0.125 cm$^3$ g$^{-1}$.
+
+\section*{Problem 3.10}
+\addcontentsline{toc}{section}{Problem 3.10}
+Calculate the reversible work done in compressing 1 ft$^3$ of mercury at a constant temperature of 32°F from 1(atm) to 3000(atm). The isothermal compressibility of mercury at 32°F is:
+$$ \kappa(\text{atm})^{-1} = 3.9 \times 10^{-6} - 0.1 \times 10^{-9} P(\text{atm}) $$
+
+\section*{Problem 3.11}
+\addcontentsline{toc}{section}{Problem 3.11}
+Five kilograms of liquid carbon tetrachloride undergo a mechanically reversible, isobaric change at 1 bar during which the temperature changes from 0°C to 20°C. Determine $\Delta V$, W, Q, $\Delta H$, and $\Delta U$. The properties for liquid carbon tetrachloride at 1 bar and 0°C may be assumed independent of temperature: $\beta = 1.2 \times 10^{-3}$ K$^{-1}$, $C_P = 0.84$ kJ kg$^{-1}$ K$^{-1}$, and $\rho = 1590$ kg m$^{-3}$.
+
+\section*{Problem 3.12}
+\addcontentsline{toc}{section}{Problem 3.12}
+Various species of hagfish, or slime eels, live on the ocean floor, where they burrow inside other fish, eating them from the inside out and secreting copious amounts of slime. Their skins are widely used to make eelskin wallets and accessories. Suppose a hagfish is caught in a trap at a depth of 200 m below the ocean surface, where the water temperature is 10°C, then brought to the surface where the temperature is 15°C. If the isothermal compressibility and volume expansivity are assumed constant and equal to the values for water,
+$$ (\beta = 10^{-4} \text{K}^{-1} \text{ and } \kappa = 4.8 \times 10^{-5} \text{ bar}^{-1}) $$
+
+
 
 
 \end{document}
