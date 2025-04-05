@@ -9,3 +9,4 @@
 *.synctex.gz.sum.synctex
 *.toc
 *.latexmkrc
+*.out
