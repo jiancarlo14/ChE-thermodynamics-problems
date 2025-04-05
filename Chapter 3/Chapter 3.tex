@@ -14,7 +14,9 @@
 \title{Chapter 3 Problems}
 %\bibliography{}
 
-\DeclareSIUnit{bar}
+\DeclareSIUnit\bar{bar}
+\DeclareSIUnit\feet{ft}
+\DeclareSIUnit\atmosphere{atm}
 
 \newenvironment{solution}{\par\noindent\textbf{\\Solution:\\}}{\par\medskip}
 
@@ -145,10 +147,37 @@ For liquid water the isothermal compressibility is given by:
 $$ \kappa = \frac{c}{V(P+b)} $$
 where c and b are functions of temperature only. If 1 kg of water is compressed isothermally and reversibly from 1 to 500 bar at 60°C, how much work is required? At 60°C, b = 2700 bar and c = 0.125 cm$^3$ g$^{-1}$.
 
+\begin{solution}
+    \begin{gather*}
+          W = -\int_{V_{1}}^{V_{2}} P \, dV \\
+          \kappa \equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+          dV = -\kappa V \, dP \\
+          dV = -\frac{c}{P+b}\,dP \\
+    \end{gather*}
+    \vspace{-3em}
+    \begin{align*}
+        W & = \frac{c}{3}\left( 500^{3}-1 \right)~\unit{ \bar\centi\meter\cubed\per\gram }\times 1000\unit{ \gram } \times 10^{2}\unit{ \kilo\pascal\per\bar }\times 0.01^{3}\unit{ \meter\cubed\per\centi\meter\cubed } \\
+        \Aboxed{ W & = 1562500\unit{ \kilo\joule } }
+    \end{align*}
+\end{solution}
+
 \section*{Problem 3.10}
 \addcontentsline{toc}{section}{Problem 3.10}
 Calculate the reversible work done in compressing 1 ft$^3$ of mercury at a constant temperature of 32°F from 1(atm) to 3000(atm). The isothermal compressibility of mercury at 32°F is:
 $$ \kappa(\text{atm})^{-1} = 3.9 \times 10^{-6} - 0.1 \times 10^{-9} P(\text{atm}) $$
+
+\begin{solution}
+    \begin{gather*}
+        W = -\int_{V_{1}}^{V_{2}} P \, dV \\
+        \kappa = \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+        dV = -\kappa V\,dP
+    \end{gather*}
+    \begin{align*}
+        W &= -\int_{P_{1}}^{P_{2}} -\left( 3.9\times10^{-6}-0.1\times10^{-9}P \right)V \, dP \\
+        W &= 0.0112461~\unit{ \atmosphere\feet\cubed } \times 101.325~\unit{ \kilo\pascal\per\atmosphere }\times 3.28^{-3}~\unit{ \meter\cubed\per\feet\cubed } \\
+        \Aboxed{ W &= 32.29~\unit{ \joule } }
+    \end{align*}
+\end{solution}
 
 \section*{Problem 3.11}
 \addcontentsline{toc}{section}{Problem 3.11}
@@ -163,3 +192,4 @@ $$ (\beta = 10^{-4} \text{K}^{-1} \text{ and } \kappa = 4.8 \times 10^{-5} \text
 
 
 \end{document}
+
