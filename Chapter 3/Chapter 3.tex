@@ -289,62 +289,143 @@ For one of the substances in Table 3.2, compute the change in volume and work do
             \Delta V=V\left( \beta \Delta T-\kappa \cancel{\Delta T}   \right)\\
             W=-P\Delta V
       \end{gather*}
-\begin{center}
-      \fbox{
-          \begin{minipage}{0pt}
-              \begin{align*}
-                  \Delta V &= 
-                  \begin{bmatrix}
-                      1.03e-05 \\
-                      7.91e-06 \\
-                      8.87e-06 \\
-                      8.50e-06 \\
-                      1.48e-05 \\
-                      2.31e-05 \\
-                      1.77e-05 \\
-                      1.50e-05 \\
-                      1.15e-05 \\
-                      1.88e-05 \\
-                      7.16e-06 \\
-                      1.21e-05 \\
-                      8.13e-06 \\
-                  \end{bmatrix}
-                  \si{\meter\cubed} \qquad 
-                  W = 
-                  \begin{bmatrix}
-                      -1.03e-05 \\
-                      -7.91e-06 \\
-                      -8.87e-06 \\
-                      -8.50e-06 \\
-                      -1.48e-05 \\
-                      -2.31e-05 \\
-                      -1.77e-05 \\
-                      -1.50e-05 \\
-                      -1.15e-05 \\
-                      -1.88e-05 \\
-                      -7.16e-06 \\
-                      -1.21e-05 \\
-                      -8.13e-06 \\
-                  \end{bmatrix}
-                  \si{\joule}
-              \end{align*}
-          \end{minipage}
-          \hspace{0pt}
-      }
-\end{center}
+      \vspace{-1em}
+      \begin{center}
+          \fbox{
+              \begin{minipage}{0pt}
+                  \begin{align*}
+                      \Delta V &= 
+                      \begin{bmatrix}
+                          1.03e-05 \\
+                          7.91e-06 \\
+                          8.87e-06 \\
+                          8.50e-06 \\
+                          1.48e-05 \\
+                          2.31e-05 \\
+                          1.77e-05 \\
+                          1.50e-05 \\
+                          1.15e-05 \\
+                          1.88e-05 \\
+                          7.16e-06 \\
+                          1.21e-05 \\
+                          8.13e-06 \\
+                      \end{bmatrix}
+                      \si{\meter\cubed} \qquad 
+                      W = 
+                      \begin{bmatrix}
+                          -1.03 \\
+                          -0.79 \\
+                          -0.89 \\
+                          -0.85 \\
+                          -1.48 \\
+                          -2.31 \\
+                          -1.77 \\
+                          -1.50 \\
+                          -1.15 \\
+                          -1.88 \\
+                          -0.72 \\
+                          -1.21 \\
+                          -0.81 \\
+                      \end{bmatrix}
+                      \si{\joule}
+                  \end{align*}
+              \end{minipage}
+              \hspace{0pt}
+          }
+      \end{center}
 \end{solution}
 
 \section*{Problem 3.14}
 \addcontentsline{toc}{section}{Problem 3.14}
 For one of the substances in Table 3.2, compute the change in volume and work done when one kilogram of the substance is compressed from 1 bar to 100 bar at a constant temperature of 20$^\circ$C.
 
-\bigskip
+\begin{solution}
+      \begin{gather*}
+          dV = -V\kappa dP \\
+          W = \int_{V_{1}}^{V_{2}} -P \, dV \\
+          W = \frac{V\kappa }{2}\left( P_{2}^{2}-P_{1}^{2} \right)
+      \end{gather*}
+      \begin{center}
+          \fbox{%
+              \begin{minipage}{0pt}
+                  \begin{align*}
+                      \Delta V &= 
+                      \begin{bmatrix}
+                          -8.55e-06 \\
+                          -4.38e-06 \\
+                          -7.35e-06 \\
+                          -6.67e-06 \\
+                          -1.44e-05 \\
+                          -2.59e-05 \\
+                          -1.40e-05 \\
+                          -1.24e-05 \\
+                          -9.69e-06 \\
+                          -1.52e-05 \\
+                          -6.53e-06 \\
+                          -1.02e-05 \\
+                          -6.63e-06 \\
+                      \end{bmatrix}
+                      \si{\meter\cubed} \qquad 
+                      W = 
+                      \begin{bmatrix}
+                          4.32e-04 \\
+                          2.21e-04 \\
+                          3.71e-04 \\
+                          3.37e-04 \\
+                          7.26e-04 \\
+                          1.31e-03 \\
+                          7.08e-04 \\
+                          6.28e-04 \\
+                          4.89e-04 \\
+                          7.66e-04 \\
+                          3.30e-04 \\
+                          5.17e-04 \\
+                          3.35e-04 \\
+                      \end{bmatrix}
+                      \unit{ \joule }
+                  \end{align*}
+              \end{minipage}%
+              \hspace{0pt}% Correct for extra spacing
+          }
+      \end{center}
+\end{solution}
+
 
 \section*{Problem 3.15}
 \addcontentsline{toc}{section}{Problem 3.15}
 For one of the substances in Table 3.2, compute the final pressure when the substance is heated from 15$^\circ$C and 1 bar to 25$^\circ$C at constant volume.
 
-\bigskip
+\begin{solution}
+    \begin{gather*}
+        P_{2}=P_{1}+\frac{\beta \Delta T}{\kappa }
+    \end{gather*}
+    \begin{center}
+        \fbox{%
+            \begin{minipage}{0pt} % Use \linewidth for flexible width
+                \begin{align*}
+                    P_{2} &= 
+                    \begin{bmatrix}
+                        2.19 \\
+                        2.79 \\
+                        2.19 \\
+                        2.26 \\
+                        2.02 \\
+                        1.88 \\
+                        2.25 \\
+                        2.19 \\
+                        2.17 \\
+                        2.23 \\
+                        2.09 \\
+                        2.17 \\
+                        2.21 \\
+                    \end{bmatrix}
+                    \si{\bar}
+                \end{align*}
+            \end{minipage}
+            \hspace{0pt}
+        }
+    \end{center}
+\end{solution}
 
 \section*{Problem 3.16}
 \addcontentsline{toc}{section}{Problem 3.16}
