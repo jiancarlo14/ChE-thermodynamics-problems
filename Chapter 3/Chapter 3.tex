@@ -6,6 +6,8 @@
 \usepackage{textgreek}
 \usepackage{mathtools}
 \usepackage{cancel}
+\usepackage{empheq}
+\newcommand*\widefbox[1]{\fbox{\vspace{0.5em}\hspace{2em}#1\hspace{2em}\vspace{0.5em}}}
 
 % FIGURES, TABLES, LISTS
 \usepackage{graphicx}
@@ -51,390 +53,622 @@
 
 \section*{Problem 3.1}
 \addcontentsline{toc}{section}{Problem 3.1}
-How many phase rule variables must be specified to fix the thermodynamic state of each of the following systems?
+How many phase rule variables must be specified to fix the
+thermodynamic state of each of the following systems?
 \begin{enumerate}[label=(\alph*)]
-    \item A sealed flask containing a liquid ethanol-water mixture in equilibrium with its vapor.
-    \item A sealed flask containing a liquid ethanol-water mixture in equilibrium with its vapor and nitrogen.
-    \item A sealed flask containing ethanol, toluene, and water as two liquid phases plus vapor.
+  \item A sealed flask containing a liquid ethanol-water mixture in
+    equilibrium with its vapor.
+  \item A sealed flask containing a liquid ethanol-water mixture in
+    equilibrium with its vapor and nitrogen.
+  \item A sealed flask containing ethanol, toluene, and water as two
+    liquid phases plus vapor.
 \end{enumerate}
 
 \begin{solution}
-    Using the phase rule, $F=2-\pi+N$.
-    \begin{enumerate}[label=(\alph*)]
-        \item $N=2$ and $\pi=2$ so $\boxed{ F=2 }$
-        \item $N=3$ and $\pi=2$ so $\boxed{ F=3 }$
-        \item $N=3$ and $\pi=3$ so $\boxed{ F=2 }$
-    \end{enumerate}
+  Using the phase rule, $F=2-\pi+N$.
+  \begin{enumerate}[label=(\alph*)]
+    \item $N=2$ and $\pi=2$ so $\boxed{ F=2 }$
+    \item $N=3$ and $\pi=2$ so $\boxed{ F=3 }$
+    \item $N=3$ and $\pi=3$ so $\boxed{ F=2 }$
+  \end{enumerate}
 \end{solution}
 
 \section*{Problem 3.2}
 \addcontentsline{toc}{section}{Problem 3.2}
-A renowned laboratory reports quadruple-point coordinates of $10.2~\unit{\mega\bar}$ and $24.1~\unit{\degreeCelsius}$ for four-phase equilibrium of allotropic solid forms of the exotic chemical $\beta$-miasmone. Evaluate the claim.
+A renowned laboratory reports quadruple-point coordinates of
+$10.2~\unit{\mega\bar}$ and $24.1~\unit{\degreeCelsius}$ for
+four-phase equilibrium of allotropic solid forms of the exotic
+chemical $\beta$-miasmone. Evaluate the claim.
 
 \begin{solution}
-    \begin{equation*}
-        F=2-\pi+N
-    \end{equation*}
-    If $N=1$ and $\pi=4$, the phase rule suggests that $F=-1$. The claim is impossible unless there are other components present in the system.
+  \begin{equation*}
+    F=2-\pi+N
+  \end{equation*}
+  If $N=1$ and $\pi=4$, the phase rule suggests that $F=-1$. The
+  claim is impossible unless there are other components present in the system.
 \end{solution}
 
 \section*{Problem 3.3}
 \addcontentsline{toc}{section}{Problem 3.3}
-A closed, nonreactive system contains species 1 and 2 in vapor/liquid equilibrium. Species 2 is a very light gas, essentially insoluble in the liquid phase. The vapor phase contains both species 1 and 2. Some additional moles of species 2 are added to the system, which is then restored to its initial temperature \( T \) and pressure \( P \). As a result of the process, does the total number of moles of liquid increase, decrease, or remain unchanged?
+A closed, nonreactive system contains species 1 and 2 in vapor/liquid
+equilibrium. Species 2 is a very light gas, essentially insoluble in
+the liquid phase. The vapor phase contains both species 1 and 2. Some
+additional moles of species 2 are added to the system, which is then
+restored to its initial temperature \( T \) and pressure \( P \). As
+a result of the process, does the total number of moles of liquid
+increase, decrease, or remain unchanged?
 
 \begin{solution}
-    \begin{equation*}
-        N=2, \qquad \pi=2 \qquad \to \qquad F=2.
-    \end{equation*}
-    With constant temperature and pressure, the system's equilibrium is constrained. Introducing species 2 increases $y_2$ and decreases $y_1$. Therefore, to maintain the original vapor equilibrium, liquid species 1 must evaporate, resulting in a decrease in the total moles of liquid.
-
+  \begin{equation*}
+    N=2, \qquad \pi=2 \qquad \to \qquad F=2.
+  \end{equation*}
+  With constant temperature and pressure, the system's equilibrium is
+  constrained. Introducing species 2 increases $y_2$ and decreases
+  $y_1$. Therefore, to maintain the original vapor equilibrium,
+  liquid species 1 must evaporate, resulting in a decrease in the
+  total moles of liquid.
 \end{solution}
+
 
 \section*{Problem 3.4}
 \addcontentsline{toc}{section}{Problem 3.4}
-A system comprised of chloroform, 1,4-dioxane, and ethanol exists as a two-phase vapor/liquid system at $50~\unit{ \degreeCelsius }$ and $55~\unit{ \kilo\pascal }$. After the addition of some pure ethanol, the system can be returned to two-phase equilibrium at the initial T and P. In what respect has the system changed, and in what respect has it not changed?
+A system comprised of chloroform, 1,4-dioxane, and ethanol exists as
+a two-phase vapor/liquid system at $50~\unit{ \degreeCelsius }$ and
+$55~\unit{ \kilo\pascal }$. After the addition of some pure ethanol,
+the system can be returned to two-phase equilibrium at the initial T
+and P. In what respect has the system changed, and in what respect
+has it not changed?
 
 \begin{solution}
-    \begin{equation*}
-        N=3, \qquad \pi=2 \qquad \to \qquad F=3
-    \end{equation*}
-
-    The addition of ethanol increases the $y_{EtOH}$ and $x_{\text{EtOH}}$ of the system thus decreasing $\left( y_{\text{EtOH}} \right)'$ and $\left( x_{EtOH} \right)'$. Since only two \textit{independent} intensive variables were changed, the number of phases will remain unchanged. 
+  \begin{equation*}
+    N=3, \qquad \pi=2 \qquad \to \qquad F=3
+  \end{equation*}
+  The addition of ethanol increases the $y_{EtOH}$ and
+  $x_{\text{EtOH}}$ of the system thus decreasing $\left(
+  y_{\text{EtOH}} \right)'$ and $\left( x_{EtOH} \right)'$. Since
+  only two \textit{independent} intensive variables were changed, the
+  number of phases will remain unchanged.
 \end{solution}
 
 \section*{Problem 3.5}
 \addcontentsline{toc}{section}{Problem 3.5}
 For the system described in Prob. 3.4:
 \begin{enumerate}
-    \item[(a)] How many phase-rule variables in addition to $T$ and $P$ must be chosen so as to fix the compositions of both phases?
-    \item[(b)] If the temperature and pressure are to remain the same, can the overall composition of the system be changed (by adding or removing material) without affecting the compositions of the liquid and vapor phases?
+  \item[(a)] How many phase-rule variables in addition to $T$ and $P$
+    must be chosen so as to fix the compositions of both phases?
+  \item[(b)] If the temperature and pressure are to remain the same,
+    can the overall composition of the system be changed (by adding
+    or removing material) without affecting the compositions of the
+    liquid and vapor phases?
 \end{enumerate}
 
 \begin{solution}
-    \begin{enumerate}[label=(\alph*)]
-        \item 3 degrees of freedom.
-        \item One more intensive variable (mole fraction of one component) must be fixed in order to fix the intensive state of the system.
-    \end{enumerate}
+  \begin{enumerate}[label=(\alph*)]
+    \item 3 degrees of freedom.
+    \item One more intensive variable (mole fraction of one
+      component) must be fixed in order to fix the intensive state of
+      the system.
+  \end{enumerate}
 \end{solution}
 
 
 \section*{Problem 3.6}
 \addcontentsline{toc}{section}{Problem 3.6}
-Express the volume expansivity and the isothermal compressibility as functions of density $\rho$ and its partial derivatives. For water at $50~\unit{ \degreeCelsius }$ and $1~\unit{ \bar }$, $\kappa = 44.18 \times 10^{-6}$ $\unit{ \bar }$. To what pressure must water be compressed at $50~\unit{ \degreeCelsius }$ to change its density by 1\%? Assume that $\kappa$ is independent of P.
+Express the volume expansivity and the isothermal compressibility as
+functions of density $\rho$ and its partial derivatives. For water at
+$50~\unit{ \degreeCelsius }$ and $1~\unit{ \bar }$, $\kappa = 44.18
+\times 10^{-6}$ $\unit{ \bar }$. To what pressure must water be
+compressed at $50~\unit{ \degreeCelsius }$ to change its density by
+1\%? Assume that $\kappa$ is independent of P.
 
 \begin{solution}
-    \begin{gather*}
-        \kappa\equiv\frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P} \\
-        \int \kappa \, dP = \int -\rho \, d\left( \frac{1}{\rho} \right) \\
-    \end{gather*}
-    let $u=1/\rho$ \quad $\to$ \quad  $\rho\,d\left( 1/\rho \right)=1/u\,d\left( u \right)$:
-    \begin{gather*}
-        \kappa\Delta P = -\ln\left( \frac{u_{2}}{u_{1}} \right)= \ln\left( \frac{\rho_{2}}{\rho_{1}} \right) \\
-        \left( 44.18\times10^{-6} \right)\left( P_{2}-1 \right)= \ln\left( 1.01 \right) \\
-        \boxed{ P_{2}=226~\unit{ \bar } }
-    \end{gather*}
+  \begin{gather*}
+    \kappa\equiv\frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P} \\
+    \int \kappa \, dP = \int -\rho \, d\left( \frac{1}{\rho} \right) \\
+  \end{gather*}
+  let $u=1/\rho$ \quad $\to$ \quad  $\rho\,d\left( 1/\rho
+  \right)=1/u\,d\left( u \right)$:
+  \begin{gather*}
+    \kappa\Delta P = -\ln\left( \frac{u_{2}}{u_{1}} \right)=
+    \ln\left( \frac{\rho_{2}}{\rho_{1}} \right) \\
+    \left( 44.18\times10^{-6} \right)\left( P_{2}-1 \right)=
+    \ln\left( 1.01 \right) \\
+    \boxed{ P_{2}=226~\unit{ \bar } }
+  \end{gather*}
 \end{solution}
 
 \section*{Problem 3.7}
 \addcontentsline{toc}{section}{Problem 3.7}
-Generally, volume expansivity $\beta$ and isothermal compressibility $\kappa$ depend on T and P. Prove that:
-$$ \left(\frac{\partial \beta}{\partial P}\right)_T = -\left(\frac{\partial \kappa}{\partial T}\right)_P $$
+Generally, volume expansivity $\beta$ and isothermal compressibility
+$\kappa$ depend on T and P. Prove that:
+$$ \left(\frac{\partial \beta}{\partial P}\right)_T =
+-\left(\frac{\partial \kappa}{\partial T}\right)_P $$
 
 \begin{solution}
-    \begin{gather*}
-        \beta \equiv \frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P}, \qquad \kappa \equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
-        dV = \frac{1}{d\beta}\left( \frac{\partial V}{\partial T} \right)_{P} = \frac{-1}{d\kappa}\left( \frac{\partial V}{\partial P} \right)_{T} \\
-        -\left( \frac{\partial \kappa}{\partial T} \right)_{P}=\left( \frac{\partial \beta}{\partial P} \right)_{T}
-    \end{gather*}
+  \begin{gather*}
+    \beta \equiv \frac{1}{V}\left( \frac{\partial V}{\partial T}
+    \right)_{P}, \qquad \kappa \equiv \frac{-1}{V}\left(
+    \frac{\partial V}{\partial P} \right)_{T} \\
+    dV = \frac{1}{d\beta}\left( \frac{\partial V}{\partial T}
+    \right)_{P} = \frac{-1}{d\kappa}\left( \frac{\partial V}{\partial
+    P} \right)_{T} \\
+    -\left( \frac{\partial \kappa}{\partial T} \right)_{P}=\left(
+    \frac{\partial \beta}{\partial P} \right)_{T}
+  \end{gather*}
 \end{solution}
 
 \section*{Problem 3.8}
 \addcontentsline{toc}{section}{Problem 3.8}
 The Tait equation for liquids is written for an isotherm as:
 $$ V = V_0\left(1 - \frac{AP}{B+P}\right) $$
-where V is molar or specific volume, $V_0$ is the hypothetical molar or specific volume at zero pressure, and A and B are positive constants. Find an expression for the isothermal compressibility consistent with this equation.
+where V is molar or specific volume, $V_0$ is the hypothetical molar
+or specific volume at zero pressure, and A and B are positive
+constants. Find an expression for the isothermal compressibility
+consistent with this equation.
 
 \begin{solution}
-    \begin{align*}
-        \kappa &\equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
-               &=\frac{-1}{V}\frac{d}{dP}\left[ V_{0}\left( 1-\frac{AP}{B+P} \right) \right]
-               \intertext{after differentiation:}
-               &=\frac{-1}{V}\left[ V_{0}A\left( B+P \right)^{-1}-V_{0}\left(  AP \right)\left( B+P \right)^{-2} \right]
-               \intertext{simplification:}
-        \Aboxed{ $\kappa & = \dfrac{-V_{0}}{V}\left[ \dfrac{A}{B+P} - \dfrac{AP}{\left( B+P \right)^{2}} \right]$ }
-    \end{align*}
+  \begin{align*}
+    \kappa &\equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P}
+    \right)_{T} \\
+    &=\frac{-1}{V}\frac{d}{dP}\left[ V_{0}\left( 1-\frac{AP}{B+P}
+    \right) \right]
+    \intertext{after differentiation:}
+    &=\frac{-1}{V}\left[ V_{0}A\left( B+P \right)^{-1}-V_{0}\left(
+    AP \right)\left( B+P \right)^{-2} \right]
+    \intertext{simplification:}
+    \Aboxed{ $\kappa & = \dfrac{-V_{0}}{V}\left[ \dfrac{A}{B+P} -
+    \dfrac{AP}{\left( B+P \right)^{2}} \right]$ }
+  \end{align*}
 \end{solution}
 
 \section*{Problem 3.9}
 \addcontentsline{toc}{section}{Problem 3.9}
 For liquid water the isothermal compressibility is given by:
 $$ \kappa = \frac{c}{V(P+b)} $$
-where c and b are functions of temperature only. If $1~\unit{ \kilo\gram }$ of water is compressed isothermally and reversibly from $1$ to $500~\unit{ \bar }$ at $60~\unit{ \degreeCelsius }$, how much work is required? At $60~\unit{ \degreeCelsius }$, $b=2700~\unit{ \bar }$ and $c=0.125~\unit{ \centi\meter\cubed\per\gram }$.
+where c and b are functions of temperature only. If $1~\unit{
+\kilo\gram }$ of water is compressed isothermally and reversibly from
+$1$ to $500~\unit{ \bar }$ at $60~\unit{ \degreeCelsius }$, how much
+work is required? At $60~\unit{ \degreeCelsius }$, $b=2700~\unit{
+\bar }$ and $c=0.125~\unit{ \centi\meter\cubed\per\gram }$.
 
 \begin{solution}
-    \begin{gather*}
-        W = -\int_{V_{1}}^{V_{2}} P \, dV \\
-        \kappa \equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
-        dV = -\kappa V \, dP \\
-        dV = -\frac{c}{P+b}\,dP \\
-    \end{gather*}
-    \vspace{-3em}
-    \begin{align*}
-        W & = \frac{c}{3}\left( 500^{3}-1 \right)~\unit{ \bar\centi\meter\cubed\per\gram }\times 1000\unit{ \gram } \times 10^{2}\unit{ \kilo\pascal\per\bar }\times 0.01^{3}\unit{ \meter\cubed\per\centi\meter\cubed } \\
-        \Aboxed{ W & = 1562500\unit{ \kilo\joule } }
-    \end{align*}
+  \begin{gather*}
+    W = -\int_{V_{1}}^{V_{2}} P \, dV \\
+    \kappa \equiv \frac{-1}{V}\left( \frac{\partial V}{\partial P}
+    \right)_{T} \\
+    dV = -\kappa V \, dP \\
+    dV = -\frac{c}{P+b}\,dP \\
+  \end{gather*}
+  \vspace{-3em}
+  \begin{align*}
+    W & = \frac{c}{3}\left( 500^{3}-1 \right)~\unit{
+    \bar\centi\meter\cubed\per\gram }\times 1000\unit{ \gram } \times
+    10^{2}\unit{ \kilo\pascal\per\bar }\times 0.01^{3}\unit{
+    \meter\cubed\per\centi\meter\cubed } \\
+    \Aboxed{ W & = 1562500\unit{ \kilo\joule } }
+  \end{align*}
 \end{solution}
 
 \section*{Problem 3.10}
 \addcontentsline{toc}{section}{Problem 3.10}
-Calculate the reversible work done in compressing 1 ft$^3$ of mercury at a constant temperature of 32°F from 1(atm) to 3000(atm). The isothermal compressibility of mercury at 32°F is:
-$$ \kappa(\text{atm})^{-1} = 3.9 \times 10^{-6} - 0.1 \times 10^{-9} P(\text{atm}) $$
+Calculate the reversible work done in compressing 1 ft$^3$ of mercury
+at a constant temperature of 32°F from 1(atm) to 3000(atm). The
+isothermal compressibility of mercury at 32°F is:
+$$ \kappa(\text{atm})^{-1} = 3.9 \times 10^{-6} - 0.1 \times 10^{-9}
+P(\text{atm}) $$
 
 \begin{solution}
-    \begin{gather*}
-        W = -\int_{V_{1}}^{V_{2}} P \, dV \\
-        \kappa = \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
-        dV = -\kappa V\,dP
-    \end{gather*}
-    \begin{align*}
-        W &= -\int_{P_{1}}^{P_{2}} -\left( 3.9\times10^{-6}-0.1\times10^{-9}P \right)V \, dP \\
-        W &= 0.0112461~\unit{ \atmosphere\feet\cubed } \times 101325~\unit{ \pascal\per\atmosphere }\times 3.28^{-3}~\unit{ \meter\cubed\per\feet\cubed } \\
-        \Aboxed{ W &= 32.29~\unit{ \joule } }
-    \end{align*}
+  \begin{gather*}
+    W = -\int_{V_{1}}^{V_{2}} P \, dV \\
+    \kappa = \frac{-1}{V}\left( \frac{\partial V}{\partial P} \right)_{T} \\
+    dV = -\kappa V\,dP
+  \end{gather*}
+  \begin{align*}
+    W &= -\int_{P_{1}}^{P_{2}} -\left(
+    3.9\times10^{-6}-0.1\times10^{-9}P \right)V \, dP \\
+    W &= 0.0112461~\unit{ \atmosphere\feet\cubed } \times
+    101325~\unit{ \pascal\per\atmosphere }\times 3.28^{-3}~\unit{
+    \meter\cubed\per\feet\cubed } \\
+    \Aboxed{ W &= 32.29~\unit{ \joule } }
+  \end{align*}
 \end{solution}
 
 \section*{Problem 3.11}
 \addcontentsline{toc}{section}{Problem 3.11}
-Five kilograms of liquid carbon tetrachloride undergo a mechanically reversible, isobaric change at $1~\unit{ \bar }$ during which the temperature changes from $0~\unit{ \degreeCelsius }$ to $20~\unit{ \degreeCelsius }$. Determine $\Delta V$, $W$, $Q$, $\Delta H$, and $\Delta U$. The properties for liquid carbon tetrachloride at $1~\unit{ \bar }$ and $0~\unit{ \degreeCelsius }$ may be assumed independent of temperature: $\beta = 1.2 \times 10^{-3}~\unit{ \per\kelvin }$, $C_P = 0.84~\unit{ \kilo\joule\per\kilo\gram\per\kelvin }$, and $\rho = 1590~\unit{ \kilo\gram\per\meter\cubed }$.
+Five kilograms of liquid carbon tetrachloride undergo a mechanically
+reversible, isobaric change at $1~\unit{ \bar }$ during which the
+temperature changes from $0~\unit{ \degreeCelsius }$ to $20~\unit{
+\degreeCelsius }$. Determine $\Delta V$, $W$, $Q$, $\Delta H$, and
+$\Delta U$. The properties for liquid carbon tetrachloride at
+$1~\unit{ \bar }$ and $0~\unit{ \degreeCelsius }$ may be assumed
+independent of temperature: $\beta = 1.2 \times 10^{-3}~\unit{
+\per\kelvin }$, $C_P = 0.84~\unit{
+\kilo\joule\per\kilo\gram\per\kelvin }$, and $\rho = 1590~\unit{
+\kilo\gram\per\meter\cubed }$.
 
 \begin{solution}
-    \begin{enumerate}[label=(\alph*)]
-        \item for $\Delta V$
-            \begin{gather*}
-                  \beta \equiv \frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P} \\
-                  \Delta V = \frac{\beta }{\rho }\times\Delta T \\
-                  \boxed{ \Delta V = 1.509\times10^{-5}~\unit{ \meter\cubed\per\kilo\gram } } \\
-            \end{gather*}
-        \item for $W$
-            \begin{gather*}
-                  W = -P\Delta V \\
-                  W = -100000\left( 1.509\times10^{-5} \right) \\
-                  \boxed{ W = -1.509~\unit{ \joule\per\kilo\gram } }
-            \end{gather*}
-        \item for $Q$ and $\Delta H$
-            \begin{align*}
-                Q = \Delta H &= C_{P}\Delta T \\
-                             &= 0.84\times\left( 20 \right) \\
-                \Aboxed{ Q = \Delta H &= 16.8~\unit{ \kilo\joule\per\kilo\gram } }
-            \end{align*}
-        \item for $\Delta U$
-            \begin{gather*}
-                  \Delta U = Q + W \\
-                  \Delta U = 16800 - 1.509 \\
-                  \boxed{ \Delta U \approx 16.8~\unit{ \kilo\joule\per\kilo\gram } }
-            \end{gather*}
-    \end{enumerate}
+  \begin{enumerate}[label=(\alph*)]
+    \item for $\Delta V$
+      \begin{gather*}
+        \beta \equiv \frac{1}{V}\left( \frac{\partial V}{\partial T}
+        \right)_{P} \\
+        \Delta V = \frac{\beta }{\rho }\times\Delta T \\
+        \boxed{ \Delta V = 1.509\times10^{-5}~\unit{
+        \meter\cubed\per\kilo\gram } } \\
+      \end{gather*}
+    \item for $W$
+      \begin{gather*}
+        W = -P\Delta V \\
+        W = -100000\left( 1.509\times10^{-5} \right) \\
+        \boxed{ W = -1.509~\unit{ \joule\per\kilo\gram } }
+      \end{gather*}
+    \item for $Q$ and $\Delta H$
+      \begin{align*}
+        Q = \Delta H &= C_{P}\Delta T \\
+        &= 0.84\times\left( 20 \right) \\
+        \Aboxed{ Q = \Delta H &= 16.8~\unit{ \kilo\joule\per\kilo\gram } }
+      \end{align*}
+    \item for $\Delta U$
+      \begin{gather*}
+        \Delta U = Q + W \\
+        \Delta U = 16800 - 1.509 \\
+        \boxed{ \Delta U \approx 16.8~\unit{ \kilo\joule\per\kilo\gram } }
+      \end{gather*}
+  \end{enumerate}
 \end{solution}
 
 \section*{Problem 3.12}
 \addcontentsline{toc}{section}{Problem 3.12}
-Various species of hagfish, or slime eels, live on the ocean floor, where they burrow inside other fish, eating them from the inside out and secreting copious amounts of slime. Their skins are widely used to make eelskin wallets and accessories. Suppose a hagfish is caught in a trap at a depth of $200~\unit{ \meter }$ below the ocean surface, where the water temperature is $10~\unit{ \degreeCelsius }$, then brought to the surface where the temperature is $15~\unit{ \degreeCelsius }$. If the isothermal compressibility and volume expansivity are assumed constant and equal to the values for water,
-$$ (\beta = 10^{-4} \text{K}^{-1} \text{ and } \kappa = 4.8 \times 10^{-5} \text{ bar}^{-1}) $$
-what is the fractional change in the volume of the hagfish when it is brought to the surface?
+Various species of hagfish, or slime eels, live on the ocean floor,
+where they burrow inside other fish, eating them from the inside out
+and secreting copious amounts of slime. Their skins are widely used
+to make eelskin wallets and accessories. Suppose a hagfish is caught
+in a trap at a depth of $200~\unit{ \meter }$ below the ocean
+surface, where the water temperature is $10~\unit{ \degreeCelsius }$,
+then brought to the surface where the temperature is $15~\unit{
+\degreeCelsius }$. If the isothermal compressibility and volume
+expansivity are assumed constant and equal to the values for water,
+$$ (\beta = 10^{-4} \text{K}^{-1} \text{ and } \kappa = 4.8 \times
+10^{-5} \text{ bar}^{-1}) $$
+what is the fractional change in the volume of the hagfish when it is
+brought to the surface?
 
 \begin{solution}
-    \begin{gather*}
-          \frac{dV}{V}=\beta dT-\kappa dP\\
-          \frac{\Delta V}{V}=\beta \Delta T-\kappa \Delta P\\
-          \frac{\Delta V}{V}=10^{-4}\left( 10-15 \right)-4.8\times10^{-5}\left( 1000\cdot9.81\cdot\left( 0-200 \right)\cdot10^{-5} \right)\\
-          \boxed{ \frac{\Delta V}{V}=4.4176\times10^{-4}~\text{volume change per unit volume of the hagfish.} }
-    \end{gather*}
-    It will expand.
+  \begin{gather*}
+    \frac{dV}{V}=\beta dT-\kappa dP\\
+    \frac{\Delta V}{V}=\beta \Delta T-\kappa \Delta P\\
+    \frac{\Delta V}{V}=10^{-4}\left( 10-15
+    \right)-4.8\times10^{-5}\left( 1000\cdot9.81\cdot\left( 0-200
+    \right)\cdot10^{-5} \right)\\
+    \boxed{ \frac{\Delta V}{V}=4.4176\times10^{-4}~\text{volume
+    change per unit volume of the hagfish.} }
+  \end{gather*}
+  It will expand.
 \end{solution}
 
 \section*{Table 3.2: Volumetric Properties of Liquids at 20$^\circ$C}
-Table 3.2 provides the specific volume, isothermal compressibility, and volume expansivity of several liquids at 20$^\circ$C and 1 bar$^{25}$ for use in Problems 3.13 to 3.15, where $\beta$ and $\kappa$ may be assumed constant.
+\addtocontents{toc}{}
+Table 3.2 provides the specific volume, isothermal compressibility,
+and volume expansivity of several liquids at 20$^\circ$C and 1
+bar$^{25}$ for use in Problems 3.13 to 3.15, where $\beta$ and
+$\kappa$ may be assumed constant.
 
 
 \begin{table}[h]
-\begin{tabular}{@{}llccc@{}}
-\toprule
-Molecular       & Chemical Name      & Specific            & Isothermal                    & Volume                             \\ \midrule
-Formula         &                    & Volume              & Compressibility               & Expansivity                        \\
-                &                    & V/L$\cdot$kg$^{-1}$ & $\kappa$/10$^{-5}$ bar$^{-1}$ & $\beta$/10$^{-3}$ $^\circ$C$^{-1}$ \\ \midrule
-C$_2$H$_4$O$_2$ & Acetic Acid        & 0.951               & 9.08                          & 1.08                               \\
-C$_6$H$_7$N     & Aniline            & 0.976               & 4.53                          & 0.81                               \\
-CS$_2$          & Carbon Disulfide   & 0.792               & 9.38                          & 1.12                               \\
-C$_6$H$_5$Cl    & Chlorobenzene      & 0.904               & 7.45                          & 0.94                               \\
-C$_6$H$_{12}$   & Cyclohexane        & 1.285               & 11.3                          & 1.15                               \\
-C$_4$H$_{10}$O  & Diethyl Ether      & 1.401               & 18.65                         & 1.65                               \\
-C$_2$H$_6$O     & Ethanol            & 1.265               & 11.19                         & 1.40                               \\
-C$_4$H$_8$O$_2$ & Ethyl Acetate      & 1.110               & 11.32                         & 1.35                               \\
-C$_8$H$_{10}$   & $m$-Xylene         & 1.157               & 8.46                          & 0.99                               \\
-CH$_4$O         & Methanol           & 1.262               & 12.14                         & 1.49                               \\
-CCl$_4$         & Tetrachloromethane & 0.628               & 10.5                          & 1.14                               \\
-C$_7$H$_8$      & Toluene            & 1.154               & 8.96                          & 1.05                               \\
-CHCl$_3$        & Trichloromethane   & 0.672               & 9.96                          & 1.21                               \\ \bottomrule
-\end{tabular}
+  \begin{tabular}{@{}llccc@{}}
+    \toprule
+    Molecular       & Chemical Name      & Specific            &
+    Isothermal                    & Volume
+    \\ \midrule
+    Formula         &                    & Volume              &
+    Compressibility               & Expansivity                        \\
+    &                    & V/L$\cdot$kg$^{-1}$ & $\kappa$/10$^{-5}$
+    bar$^{-1}$ & $\beta$/10$^{-3}$ $^\circ$C$^{-1}$ \\ \midrule
+    C$_2$H$_4$O$_2$ & Acetic Acid        & 0.951               & 9.08
+    & 1.08                               \\
+    C$_6$H$_7$N     & Aniline            & 0.976               & 4.53
+    & 0.81                               \\
+    CS$_2$          & Carbon Disulfide   & 0.792               & 9.38
+    & 1.12                               \\
+    C$_6$H$_5$Cl    & Chlorobenzene      & 0.904               & 7.45
+    & 0.94                               \\
+    C$_6$H$_{12}$   & Cyclohexane        & 1.285               & 11.3
+    & 1.15                               \\
+    C$_4$H$_{10}$O  & Diethyl Ether      & 1.401               &
+    18.65                         & 1.65                               \\
+    C$_2$H$_6$O     & Ethanol            & 1.265               &
+    11.19                         & 1.40                               \\
+    C$_4$H$_8$O$_2$ & Ethyl Acetate      & 1.110               &
+    11.32                         & 1.35                               \\
+    C$_8$H$_{10}$   & $m$-Xylene         & 1.157               & 8.46
+    & 0.99                               \\
+    CH$_4$O         & Methanol           & 1.262               &
+    12.14                         & 1.49                               \\
+    CCl$_4$         & Tetrachloromethane & 0.628               & 10.5
+    & 1.14                               \\
+    C$_7$H$_8$      & Toluene            & 1.154               & 8.96
+    & 1.05                               \\
+    CHCl$_3$        & Trichloromethane   & 0.672               & 9.96
+    & 1.21                               \\ \bottomrule
+  \end{tabular}
 \end{table}
 
 \pagebreak
 
 \section*{Problem 3.13}
 \addcontentsline{toc}{section}{Problem 3.13}
-For one of the substances in Table 3.2, compute the change in volume and work done when one kilogram of the substance is heated from 15$^\circ$C to 25$^\circ$C at a constant pressure of 1 bar.
+For one of the substances in Table 3.2, compute the change in volume
+and work done when one kilogram of the substance is heated from
+15$^\circ$C to 25$^\circ$C at a constant pressure of 1 bar.
 
 \begin{solution}
-      \begin{gather*}
-            \Delta V=V\left( \beta \Delta T-\kappa \cancel{\Delta T}   \right)\\
-            W=-P\Delta V
-      \end{gather*}
-      \vspace{-1em}
-      \begin{center}
-          \fbox{
-              \begin{minipage}{0pt}
-                  \begin{align*}
-                      \Delta V &= 
-                      \begin{bmatrix}
-                          1.03e-05 \\
-                          7.91e-06 \\
-                          8.87e-06 \\
-                          8.50e-06 \\
-                          1.48e-05 \\
-                          2.31e-05 \\
-                          1.77e-05 \\
-                          1.50e-05 \\
-                          1.15e-05 \\
-                          1.88e-05 \\
-                          7.16e-06 \\
-                          1.21e-05 \\
-                          8.13e-06 \\
-                      \end{bmatrix}
-                      \si{\meter\cubed} \qquad 
-                      W = 
-                      \begin{bmatrix}
-                          -1.03 \\
-                          -0.79 \\
-                          -0.89 \\
-                          -0.85 \\
-                          -1.48 \\
-                          -2.31 \\
-                          -1.77 \\
-                          -1.50 \\
-                          -1.15 \\
-                          -1.88 \\
-                          -0.72 \\
-                          -1.21 \\
-                          -0.81 \\
-                      \end{bmatrix}
-                      \si{\joule}
-                  \end{align*}
-              \end{minipage}
-              \hspace{0pt}
-          }
-      \end{center}
+  \begin{gather*}
+    \Delta V=V\left( \beta \Delta T-\kappa \cancel{\Delta P}   \right)\\
+    W=-P\Delta V
+  \end{gather*}
+  \vspace{-1em}
+  \begin{empheq}[box=\widefbox]{gather*}
+    \Delta V =
+    \begin{bmatrix}
+      1.03e-05 \\
+      7.91e-06 \\
+      8.87e-06 \\
+      8.50e-06 \\
+      1.48e-05 \\
+      2.31e-05 \\
+      1.77e-05 \\
+      1.50e-05 \\
+      1.15e-05 \\
+      1.88e-05 \\
+      7.16e-06 \\
+      1.21e-05 \\
+      8.13e-06 \\
+    \end{bmatrix}
+    \si{\meter\cubed} \qquad
+    W =
+    \begin{bmatrix}
+      -1.03 \\
+      -0.79 \\
+      -0.89 \\
+      -0.85 \\
+      -1.48 \\
+      -2.31 \\
+      -1.77 \\
+      -1.50 \\
+      -1.15 \\
+      -1.88 \\
+      -0.72 \\
+      -1.21 \\
+      -0.81 \\
+    \end{bmatrix}
+    \si{\joule}
+  \end{empheq}
 \end{solution}
 
 \section*{Problem 3.14}
 \addcontentsline{toc}{section}{Problem 3.14}
-For one of the substances in Table 3.2, compute the change in volume and work done when one kilogram of the substance is compressed from 1 bar to 100 bar at a constant temperature of 20$^\circ$C.
+For one of the substances in Table 3.2, compute the change in volume
+and work done when one kilogram of the substance is compressed from 1
+bar to 100 bar at a constant temperature of 20$^\circ$C.
 
 \begin{solution}
-      \begin{gather*}
-          dV = -V\kappa dP \\
-          W = \int_{V_{1}}^{V_{2}} -P \, dV \\
-          W = \frac{V\kappa }{2}\left( P_{2}^{2}-P_{1}^{2} \right)
-      \end{gather*}
-      \begin{center}
-          \fbox{%
-              \begin{minipage}{0pt}
-                  \begin{align*}
-                      \Delta V &= 
-                      \begin{bmatrix}
-                          -8.55e-06 \\
-                          -4.38e-06 \\
-                          -7.35e-06 \\
-                          -6.67e-06 \\
-                          -1.44e-05 \\
-                          -2.59e-05 \\
-                          -1.40e-05 \\
-                          -1.24e-05 \\
-                          -9.69e-06 \\
-                          -1.52e-05 \\
-                          -6.53e-06 \\
-                          -1.02e-05 \\
-                          -6.63e-06 \\
-                      \end{bmatrix}
-                      \si{\meter\cubed} \qquad 
-                      W = 
-                      \begin{bmatrix}
-                          4.32e-04 \\
-                          2.21e-04 \\
-                          3.71e-04 \\
-                          3.37e-04 \\
-                          7.26e-04 \\
-                          1.31e-03 \\
-                          7.08e-04 \\
-                          6.28e-04 \\
-                          4.89e-04 \\
-                          7.66e-04 \\
-                          3.30e-04 \\
-                          5.17e-04 \\
-                          3.35e-04 \\
-                      \end{bmatrix}
-                      \unit{ \joule }
-                  \end{align*}
-              \end{minipage}%
-              \hspace{0pt}% Correct for extra spacing
-          }
-      \end{center}
+  \begin{gather*}
+    dV = -V\kappa dP \\
+    W = \int_{V_{1}}^{V_{2}} -P \, dV \\
+    W = \frac{V\kappa }{2}\left( P_{2}^{2}-P_{1}^{2} \right)
+  \end{gather*}
+  \begin{empheq}[box=\widefbox]{gather*}
+    \Delta V =
+    \begin{bmatrix}
+      -8.55e-06 \\
+      -4.38e-06 \\
+      -7.35e-06 \\
+      -6.67e-06 \\
+      -1.44e-05 \\
+      -2.59e-05 \\
+      -1.40e-05 \\
+      -1.24e-05 \\
+      -9.69e-06 \\
+      -1.52e-05 \\
+      -6.53e-06 \\
+      -1.02e-05 \\
+      -6.63e-06
+    \end{bmatrix} \, \si{\meter\cubed} \qquad
+    W =
+    \begin{bmatrix}
+      4.32e-04 \\
+      2.21e-04 \\
+      3.71e-04 \\
+      3.37e-04 \\
+      7.26e-04 \\
+      1.31e-03 \\
+      7.08e-04 \\
+      6.28e-04 \\
+      4.89e-04 \\
+      7.66e-04 \\
+      3.30e-04 \\
+      5.17e-04 \\
+      3.35e-04
+    \end{bmatrix} \, \si{\joule}
+  \end{empheq}
 \end{solution}
-
 
 \section*{Problem 3.15}
 \addcontentsline{toc}{section}{Problem 3.15}
-For one of the substances in Table 3.2, compute the final pressure when the substance is heated from 15$^\circ$C and 1 bar to 25$^\circ$C at constant volume.
+For one of the substances in Table 3.2, compute the final pressure
+when the substance is heated from 15$^\circ$C and 1 bar to
+25$^\circ$C at constant volume.
 
 \begin{solution}
-    \begin{gather*}
-        P_{2}=P_{1}+\frac{\beta \Delta T}{\kappa }
-    \end{gather*}
-    \begin{center}
-        \fbox{%
-            \begin{minipage}{0pt} % Use \linewidth for flexible width
-                \begin{align*}
-                    P_{2} &= 
-                    \begin{bmatrix}
-                        2.19 \\
-                        2.79 \\
-                        2.19 \\
-                        2.26 \\
-                        2.02 \\
-                        1.88 \\
-                        2.25 \\
-                        2.19 \\
-                        2.17 \\
-                        2.23 \\
-                        2.09 \\
-                        2.17 \\
-                        2.21 \\
-                    \end{bmatrix}
-                    \si{\bar}
-                \end{align*}
-            \end{minipage}
-            \hspace{0pt}
-        }
-    \end{center}
+  \begin{gather*}
+    P_{2}=P_{1}+\frac{\beta \Delta T}{\kappa }
+  \end{gather*}
+  \begin{empheq}[box=\widefbox]{gather*}
+    P_{2} =
+    \begin{bmatrix}
+      2.19 \\
+      2.79 \\
+      2.19 \\
+      2.26 \\
+      2.02 \\
+      1.88 \\
+      2.25 \\
+      2.19 \\
+      2.17 \\
+      2.23 \\
+      2.09 \\
+      2.17 \\
+      2.21 \\
+    \end{bmatrix}
+    \si{\bar}
+  \end{empheq}
 \end{solution}
 
 \section*{Problem 3.16}
 \addcontentsline{toc}{section}{Problem 3.16}
-A substance for which $\kappa$ is a constant undergoes an isothermal, mechanically reversible process from initial state ($P_1, V_1$) to final state ($P_2, V_2$), where $V$ is molar volume.
+A substance for which $\kappa$ is a constant undergoes an isothermal,
+mechanically reversible process from initial state ($P_1, V_1$) to
+final state ($P_2, V_2$), where $V$ is molar volume.
 \begin{enumerate}
-    \item[(a)] Starting with the definition of $\kappa$, show that the path of the process is described by:
+  \item[(a)] Starting with the definition of $\kappa$, show that the
+    path of the process is described by:
     $$V = A(T)\exp(-\kappa P)$$
-    \item[(b)] Determine an exact expression which gives the isothermal work done on 1 mol of this constant-$\kappa$ substance.
+  \item[(b)] Determine an exact expression which gives the isothermal
+    work done on 1 mol of this constant-$\kappa$ substance.
 \end{enumerate}
 
-\end{document}
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item
+      \begin{gather*}
+        \kappa \equiv -\frac{1}{V}\left( \frac{\partial V}{\partial P}
+        \right)_{T} \\
+        \kappa dP = \frac{-dV}{V} \\
+        \kappa P = -\ln V + A \\
+        \boxed{ V = A\left( T \right)e^{-\kappa P} }
+      \end{gather*}
+    \item Derivation of the previous answer to solve for $P$ in
+      $W=-PdV$, then solving for the integral:
+      \begin{gather*}
+        P = \frac{1}{\kappa }\ln\left( \frac{A\left( T \right)}{V} \right) \\
+        W = -\int_{V_{1}}^{V_{2}} \frac{1}{\kappa }\ln\left(
+        \frac{A\left( T \right)}{V} \right) \, dV \\
+        W = \frac{1}{\kappa }\left[ V\ln\left( \frac{V}{A\left( T
+          \right)} \right)-\int \frac{1}{A\left( T \right)} \, dV
+        \right]_{V_{1}}^{V_{2}}\\
+        \boxed{ W = \Delta V \ln \frac{V_{2}}{V_{1}} - \frac{\Delta
+        V}{A\left( T \right)} }
+      \end{gather*}
+  \end{enumerate}
+\end{solution}
 
+\section*{Problem 3.17}
+\addcontentsline{toc}{section}{Problem 3.17}
+One mole of an ideal gas with $C_P = \frac{7}{2}R$ and $C_V =
+\frac{5}{2}R$ expands from $P_1 = \SI{8}{\bar}$ and $T_1 =
+\SI{600}{\kelvin}$ to $P_2 = \SI{1}{\bar}$ by each of the following paths:
+\begin{enumerate}[label=(\alph*)]
+  \item Constant volume;
+  \item Constant temperature;
+  \item Adiabatically.
+\end{enumerate}
+Assuming mechanical reversibility, calculate $W$, $Q$, $\Delta U$,
+and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
+
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item
+      \begin{gather*}
+        Q=\Delta U=C_{V}\Delta T\\
+        \Delta H=\Delta U+\Delta \left( PV \right)\\
+        \frac{P_{1}}{P_{2}}=\frac{T_{1}}{T_{2}}  \to  T_{2}=75~\unit{
+        \kelvin }\\
+        V = \frac{RT}{P}  \to  V = 6.235854\times10^{-3}~\unit{ \meter\cubed }\\
+        \fbox{%
+          \parbox{\widthof{$Q = \Delta U = \SI{-10.9}{\kilo\joule}$}}{%
+            \centering
+            $W = 0$ \\
+            $Q = \Delta U = \SI{-10.9}{\kilo\joule}$ \\
+            $\Delta H = \SI{-15.3}{\kilo\joule}$
+          }
+        }
+      \end{gather*}
+    \item
+      \begin{gather*}
+        W=-RT\ln\frac{V_{2}}{V_{1}}=-RT\ln\frac{P_{1}}{P_{2}} \\
+        W=-Q
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        \Delta H = \Delta U = 0 \\
+        W = -10.4~\unit{ \kilo\joule }\\
+        Q = 10.4~\unit{ \kilo\joule }
+      \end{empheq}
+    \item
+      % FORMULAE FOR ADIABATIC EXPANSION
+  \end{enumerate}
+\end{solution}
+
+\section*{Problem 3.18}
+\addcontentsline{toc}{section}{Problem 3.18}
+One mole of an ideal gas with $C_P = \frac{5}{2}R$ and $C_V =
+\frac{3}{2}R$ expands from $P_1 = \SI{6}{\bar}$ and $T_1 =
+\SI{800}{\kelvin}$ to $P_2 = \SI{1}{\bar}$ by each of the following paths:
+\begin{enumerate}[label=(\alph*)]
+  \item Constant volume;
+  \item Constant temperature;
+  \item Adiabatically.
+\end{enumerate}
+Assuming mechanical reversibility, calculate $W$, $Q$, $\Delta U$,
+and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
+
+\section*{Problem 3.19}
+\addcontentsline{toc}{section}{Problem 3.19}
+An ideal gas initially at $\SI{600}{\kelvin}$ and $\SI{10}{\bar}$
+undergoes a four-step mechanically reversible cycle in a closed
+system. In step $12$, pressure decreases isothermally to
+$\SI{3}{\bar}$; in step $23$, pressure decreases at constant volume
+to $\SI{2}{\bar}$; in step $34$, volume decreases at constant
+pressure; and in step $41$, the gas returns adiabatically to its
+initial state. Take $C_P = \frac{7}{2}R$ and $C_V = \frac{5}{2}R$.
+\begin{enumerate}[label=(\alph*)]
+  \item Sketch the cycle on a $PV$ diagram.
+  \item Determine (where unknown) both $T$ and $P$ for states $1$, $2$,
+    $3$, and $4$.
+  \item Calculate $Q$, $W$, $\Delta U$, and $\Delta H$ for each step
+    of the cycle.
+\end{enumerate}
+
+\section*{Problem 3.20}
+\addcontentsline{toc}{section}{Problem 3.20}
+An ideal gas initially at $\SI{300}{\kelvin}$ and $\SI{1}{\bar}$
+undergoes a three-step mechanically reversible cycle in a closed
+system. In step $12$, pressure increases isothermally to
+$\SI{5}{\bar}$; in step $23$, pressure increases at constant volume;
+and in step $31$, the gas returns adiabatically to its initial state.
+Take $C_P = \frac{7}{2}R$ and $C_V = \frac{5}{2}R$.
+\begin{enumerate}[label=(\alph*)]
+  \item Sketch the cycle on a $PV$ diagram.
+  \item Determine (where unknown) $V$, $T$, and $P$ for states $1$,
+    $2$, and $3$.
+  \item Calculate $Q$, $W$, $\Delta U$, and $\Delta H$ for each step
+    of the cycle.
+\end{enumerate}
+
+\section*{Problem 3.21}
+\addcontentsline{toc}{section}{Problem 3.21}
+The state of an ideal gas with $C_P = \frac{5}{2}R$ is changed from
+$P_1 = \SI{1}{\bar}$ and $V_1 = \SI{12}{\meter\cubed}$ to $P_2 =
+\SI{12}{\bar}$ and $V_2 = \SI{1}{\meter\cubed}$ by the following
+mechanically reversible processes:
+\begin{enumerate}[label=(\alph*)]
+  \item Isothermal compression.
+  \item Adiabatic compression followed by cooling at constant pressure.
+  \item Adiabatic compression followed by cooling at constant volume.
+  \item Heating at constant volume followed by cooling at constant pressure.
+  \item Cooling at constant pressure followed by heating at constant volume.
+\end{enumerate}
+Calculate $Q$, $W$, $\Delta U$, and $\Delta H$ for all processes, and
+sketch the paths of all processes on a single $PV$ diagram.
+
+
+\end{document}
