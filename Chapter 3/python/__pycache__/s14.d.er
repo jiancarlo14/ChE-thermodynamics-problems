@@ -1,0 +1,8 @@
+##[pylyzer] succeed c:\users\jian\main\projects\che thermodynamics problems\chapter 3\python\s14.py 1744469370 376
+.___v_desugar_1 = pyimport "s13"
+.s13 = pyimport "s13"
+.mass_kg: {1}
+.kappa_per100000: global::Tuple([{9.08}, {4.53}, {9.38}, {7.45}, {11.3}, {18.65}, {11.19}, {11.32}, {8.46}, {12.14}, {10.5}, {8.96}, {9.96}])
+.spec_vol_m3: global::Tuple([Never])
+.delta_V: global::Tuple([Never])
+.W: Never

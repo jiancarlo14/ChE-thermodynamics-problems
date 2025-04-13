@@ -11,12 +11,14 @@
 
 % FIGURES, TABLES, LISTS
 \usepackage{graphicx}
+\usepackage{pgf}
 \usepackage{booktabs}
 \usepackage{enumitem}
 
 % FONT
 \usepackage[utf8]{inputenc}
 \usepackage{sectsty}
+\usepackage{lmodern}
 \allsectionsfont{\sffamily}
 \renewcommand{\contentsname}{{\sffamily Table of Contents}}
 
@@ -604,8 +606,20 @@ and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
         Q = 10.4~\unit{ \kilo\joule }
       \end{empheq}
     \item
-      % FORMULAE FOR ADIABATIC EXPANSION
+      \begin{gather*}
+        T_{1}P_{1}^{\left( 1-\gamma
+        \right)/\gamma}=T_{2}P_{2}^{\left( 1-\gamma  \right)/\gamma }\\
+        T_{2}=331.227~\unit{ \kelvin }\\
+        \Delta U=W=C_{V}\Delta T\\
+        \Delta H=C_{P}\Delta T
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        Q=0\\
+        \Delta U=W=-5586.77~\unit{ \joule\per\mole }\\
+        \Delta H=-7821.47~\unit{ \joule\per\mole }
+      \end{empheq}
   \end{enumerate}
+  \scalebox{0.5}{\input{graphics/s17.pgf}}
 \end{solution}
 
 \section*{Problem 3.18}
