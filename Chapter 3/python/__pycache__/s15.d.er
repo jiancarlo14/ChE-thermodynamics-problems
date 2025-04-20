@@ -1,0 +1,10 @@
+##[pylyzer] succeed c:\users\jian\main\projects\che thermodynamics problems\chapter 3\python\s15.py 1743866216 188
+.___v_desugar_1 = pyimport "s13"
+.s13 = pyimport "s13"
+.beta_per1000: global::Tuple([{1.08}, {0.81}, {1.12}, {0.94}, {1.15}, {1.65}, {1.4}, {1.35}, {0.99}, {1.49}, {1.14}, {1.05}, {1.21}])
+.kappa_per100000: global::Tuple([{9.08}, {4.53}, {9.38}, {7.45}, {11.3}, {18.65}, {11.19}, {11.32}, {8.46}, {12.14}, {10.5}, {8.96}, {9.96}])
+.P2: Never
+
+
+
+

@@ -9,20 +9,20 @@ plt.rcParams['font.family'] = 'serif'
 x = np.linspace(1*10**5, 20*10**5, 500)
 
 # (a) Constant Volume
-V_a = R*600/(8*10**5)
+V_a = R*800/(6*10**5)
 y_a = np.full(500, V_a)
 
 # (b) Constant Temperature
 P_b = symbols('P_b')
-expr_b = R*600/(P_b)
+expr_b = R*800/(P_b)
 V_b = lambdify(P_b, expr_b, 'numpy')
 
 y_b = V_b(x)
 
 # (c) Adiabatically
-const = 8*10**5*V_a**(7/5)
+const = 6*10**5*V_a**(5/3)
 P_c = symbols('P_c')
-expr_c = (const/(P_c))**(5/7)
+expr_c = (const/(P_c))**(3/5)
 V_c = lambdify(P_c, expr_c, 'numpy')
 
 y_c = V_c(x)

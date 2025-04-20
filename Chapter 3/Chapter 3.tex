@@ -33,10 +33,6 @@
 %\bibliography{}
 \usepackage{hyperref}
 
-\title{Chapter 3 Problems}
-\author{Jian Carlo M. Guevara}
-\date{~}
-
 % UNITS
 \usepackage{siunitx}
 \DeclareSIUnit\bar{bar}
@@ -46,6 +42,9 @@
 % SOLUTION ENVIRONMENT
 \newenvironment{solution}{\par\noindent\textbf{\\Solution:\\}}{\par\medskip}
 
+\title{Chapter 3 Problems}
+\author{Jian Carlo M. Guevara}
+\date{~}
 
 \begin{document}
 
@@ -111,7 +110,6 @@ increase, decrease, or remain unchanged?
   total moles of liquid.
 \end{solution}
 
-
 \section*{Problem 3.4}
 \addcontentsline{toc}{section}{Problem 3.4}
 A system comprised of chloroform, 1,4-dioxane, and ethanol exists as
@@ -153,7 +151,6 @@ For the system described in Prob. 3.4:
   \end{enumerate}
 \end{solution}
 
-
 \section*{Problem 3.6}
 \addcontentsline{toc}{section}{Problem 3.6}
 Express the volume expansivity and the isothermal compressibility as
@@ -165,7 +162,8 @@ compressed at $50~\unit{ \degreeCelsius }$ to change its density by
 
 \begin{solution}
   \begin{gather*}
-    \kappa\equiv\frac{1}{V}\left( \frac{\partial V}{\partial T} \right)_{P} \\
+    \kappa\equiv\frac{1}{V}\left( \frac{\partial V}{\partial T}
+    \right)_{P} \\
     \int \kappa \, dP = \int -\rho \, d\left( \frac{1}{\rho} \right) \\
   \end{gather*}
   let $u=1/\rho$ \quad $\to$ \quad  $\rho\,d\left( 1/\rho
@@ -308,13 +306,15 @@ independent of temperature: $\beta = 1.2 \times 10^{-3}~\unit{
       \begin{align*}
         Q = \Delta H &= C_{P}\Delta T \\
         &= 0.84\times\left( 20 \right) \\
-        \Aboxed{ Q = \Delta H &= 16.8~\unit{ \kilo\joule\per\kilo\gram } }
+        \Aboxed{ Q = \Delta H &= 16.8~\unit{
+        \kilo\joule\per\kilo\gram } }
       \end{align*}
     \item for $\Delta U$
       \begin{gather*}
         \Delta U = Q + W \\
         \Delta U = 16800 - 1.509 \\
-        \boxed{ \Delta U \approx 16.8~\unit{ \kilo\joule\per\kilo\gram } }
+        \boxed{ \Delta U \approx 16.8~\unit{
+        \kilo\joule\per\kilo\gram } }
       \end{gather*}
   \end{enumerate}
 \end{solution}
@@ -354,7 +354,6 @@ Table 3.2 provides the specific volume, isothermal compressibility,
 and volume expansivity of several liquids at 20$^\circ$C and 1
 bar$^{25}$ for use in Problems 3.13 to 3.15, where $\beta$ and
 $\kappa$ may be assumed constant.
-
 
 \begin{table}[h]
   \begin{tabular}{@{}llccc@{}}
@@ -552,7 +551,8 @@ final state ($P_2, V_2$), where $V$ is molar volume.
     \item Derivation of the previous answer to solve for $P$ in
       $W=-PdV$, then solving for the integral:
       \begin{gather*}
-        P = \frac{1}{\kappa }\ln\left( \frac{A\left( T \right)}{V} \right) \\
+        P = \frac{1}{\kappa }\ln\left( \frac{A\left( T
+        \right)}{V} \right) \\
         W = -\int_{V_{1}}^{V_{2}} \frac{1}{\kappa }\ln\left(
         \frac{A\left( T \right)}{V} \right) \, dV \\
         W = \frac{1}{\kappa }\left[ V\ln\left( \frac{V}{A\left( T
@@ -585,9 +585,11 @@ and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
         \Delta H=\Delta U+\Delta \left( PV \right)\\
         \frac{P_{1}}{P_{2}}=\frac{T_{1}}{T_{2}}  \to  T_{2}=75~\unit{
         \kelvin }\\
-        V = \frac{RT}{P}  \to  V = 6.235854\times10^{-3}~\unit{ \meter\cubed }\\
+        V = \frac{RT}{P}  \to  V =
+        6.235854\times10^{-3}~\unit{ \meter\cubed }\\
         \fbox{%
-          \parbox{\widthof{$Q = \Delta U = \SI{-10.9}{\kilo\joule}$}}{%
+          \parbox{\widthof{$Q = \Delta U =
+          \SI{-10.9}{\kilo\joule}$}}{%
             \centering
             $W = 0$ \\
             $Q = \Delta U = \SI{-10.9}{\kilo\joule}$ \\
@@ -615,11 +617,17 @@ and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
       \end{gather*}
       \begin{empheq}[box=\widefbox]{gather*}
         Q=0\\
-        \Delta U=W=-5586.77~\unit{ \joule\per\mole }\\
-        \Delta H=-7821.47~\unit{ \joule\per\mole }
+        \Delta U=W=-5.59~\unit{ \kilo\joule\per\mole }\\
+        \Delta H=-7.82~\unit{ \kilo\joule\per\mole }
       \end{empheq}
   \end{enumerate}
-  \scalebox{0.5}{\input{graphics/s17.pgf}}
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.5}{\input{graphics/s17.pgf}}
+    \caption{PV diagram showing the three different processes as
+    described in Problem 3.17.}
+    \label{fig:s17}
+  \end{figure}
 \end{solution}
 
 \section*{Problem 3.18}
@@ -634,6 +642,52 @@ One mole of an ideal gas with $C_P = \frac{5}{2}R$ and $C_V =
 \end{enumerate}
 Assuming mechanical reversibility, calculate $W$, $Q$, $\Delta U$,
 and $\Delta H$ for each process. Sketch each path on a single $PV$ diagram.
+
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item
+      \begin{gather*}
+        \Delta U=Q=C_{V}\Delta T\\
+        \Delta H=C_{P}\Delta T\\
+        \frac{P_{1}}{T_{1}}=\frac{P_{2}}{T_{2}}\\
+        T_{2}=133.33~\unit{ \kelvin }
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        W=0\\
+        \Delta U=Q=-8.31~\unit{ \kilo\joule\per\mole }\\
+        \Delta H=-13.86~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+    \item
+      \begin{gather*}
+        W=-RT\ln\frac{P_{1}}{P_{2}}\\
+        Q=-W
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        W=-11.92~\unit{ \kilo\joule\per\mole }\\
+        Q=11.92~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+    \item
+      \begin{gather*}
+        T_{1}P_{1}^{\left( 1-\gamma  \right)/\gamma
+        }=T_{2}P_{2}^{\left( 1-\gamma  \right)/\gamma }\\
+        T_{2}=390.69~\unit{ \kelvin }\\
+        \Delta U=W=C_{V}\Delta T\\
+        \Delta H=C_{P}\Delta T
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        Q=0\\
+        \Delta U=W=-5.10~\unit{ \kilo\joule\per\mole }\\
+        \Delta H=-8.51~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+  \end{enumerate}
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.5}{\input{graphics/s18.pgf}}
+    \caption{PV diagram showing the three different processes as
+    described in Problem 3.18.}
+    \label{fig:s18}
+  \end{figure}
+\end{solution}
 
 \section*{Problem 3.19}
 \addcontentsline{toc}{section}{Problem 3.19}
@@ -652,6 +706,73 @@ initial state. Take $C_P = \frac{7}{2}R$ and $C_V = \frac{5}{2}R$.
     of the cycle.
 \end{enumerate}
 
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item Figure~\ref{fig:s19}
+      \begin{figure}[h!]
+        \centering
+        \scalebox{0.5}{\input{graphics/s19.pgf}}
+        \caption{
+          PV graph of the four-step cycle as described in
+          Problem 3.19.
+        }
+        \label{fig:s19}
+      \end{figure}
+    \item ~
+      \begin{enumerate}[label=\roman*.]
+        \item State 2:
+          The path from state 1 to state 2 is isothermal so
+          $T_{2}=600~\unit{ \kelvin }$
+        \item State 3:
+          Solving for $T_{3}$ using the ideal gas equation yields
+          $400~\unit{ \kelvin }$
+        \item State 4:
+          The path from state 3 to state 4 is isobaric so
+          $P_{2}=2~\unit{ \bar }$. Using the fact that state 4 to
+          state 1 is adiabatic, we can use
+          $$TP^{(1-\gamma)/\gamma}=\text{constant}$$ to solve for
+          $T_{4}$ which is 378.83~\unit{ \kelvin }
+      \end{enumerate}
+    \item ~
+      \begin{enumerate}[label=\roman*.]
+        \item Path 1
+          \begin{gather*}
+            Q=-W\\
+            Q=P\,dV\\
+            Q=RT\ln\frac{P_{1}}{P_{2}}
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            \Delta H=\Delta U=0\\
+            Q=6.01~\unit{ \kilo\joule\per\mole }\\
+            W=-6.01~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+        \item Path 2
+          \begin{gather*}
+            Q=\Delta U\\
+            Q=C_{V}\Delta T\\
+            \Delta H=C_{P}\Delta T
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            W=0\\
+            Q=\Delta U=-4.16~\unit{ \kilo\joule\per\mole }\\
+            \Delta H=-5.82~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+        \item Path 3
+          \begin{gather*}
+            Q=\Delta H\\
+            Q=C_{P}\Delta T\\
+            \Delta U=C_{V}\Delta T\\
+            W=\left( C_{V}-C_{P} \right)\left( \Delta T \right)
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            Q=\Delta H=-0.62~\unit{ \kilo\joule\per\mole }\\
+            \Delta U=-0.44~\unit{ \kilo\joule\per\mole }\\
+            W=-0.18~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+      \end{enumerate}
+  \end{enumerate}
+\end{solution}
+
 \section*{Problem 3.20}
 \addcontentsline{toc}{section}{Problem 3.20}
 An ideal gas initially at $\SI{300}{\kelvin}$ and $\SI{1}{\bar}$
@@ -667,6 +788,77 @@ Take $C_P = \frac{7}{2}R$ and $C_V = \frac{5}{2}R$.
   \item Calculate $Q$, $W$, $\Delta U$, and $\Delta H$ for each step
     of the cycle.
 \end{enumerate}
+
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item Figure~\ref{fig:s20}
+      \begin{figure}[h!]
+        \centering
+        \scalebox{0.5}{\input{graphics/s20.pgf}}
+        \caption{
+          PV graph of the three-step cycle as described in
+          Problem 3.20.
+        }
+        \label{fig:s20}
+      \end{figure}
+    \item ~
+      \begin{enumerate}[label=\roman*.]
+        \item State 1:
+          Use the ideal gas equation to determine $V$ which is
+          0.0249~\unit{ m\cubed\per\mole }
+        \item State 2:
+          The path from state 1 to state 2 is isothermal therefore
+          $T_{2}=300~\unit{ \kelvin }$. Determining $V_{2}$ from the
+          ideal gas equation yields 0.05~\unit{ m\cubed\per\mole }
+        \item State 3:
+          The path from state 2 to state 3 is isochoric therefore
+          $V_{3}=0.05~\unit{ m\cubed\per\mole }$. The path from state
+          3 to state 1 is adiabatic so we can use one of the
+          adiabatic equations; I will use this
+          \begin{equation*}
+            PV^{\gamma }=\text{constant}
+          \end{equation*}
+          to get the value of $P_{3}$ which is about 0.38~\unit{ \bar
+          }. $T_{3}$ can be solved by using the ideal gas law which
+          is about 226~\unit{ \kelvin }
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=\roman*.]
+        \item Path 1
+          \begin{gather*}
+            Q=-W\\
+            Q=RT\ln\frac{P_{1}}{P_{2}}
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            \Delta H=\Delta U=0\\
+            Q=-4.01~\unit{ \kilo\joule\per\mole }\\
+            W=4.01~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+        \item Path 2
+          \begin{gather*}
+            Q=\Delta U\\
+            Q=C_{V}\Delta T\\
+            \Delta H=C_{P}\Delta T
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            W=0\\
+            Q=\Delta U=-1.54~\unit{ \kilo\joule\per\mole }\\
+            \Delta H=-2.15~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+        \item Path 3
+          \begin{gather*}
+            W=\Delta U\\
+            W=C_{V}\Delta T\\
+            \Delta H=C_{P}\Delta T
+          \end{gather*}
+          \begin{empheq}[box=\widefbox]{gather*}
+            Q=0\\
+            W=\Delta U=1.54~\unit{ \kilo\joule\per\mole }\\
+            \Delta H=2.15~\unit{ \kilo\joule\per\mole }
+          \end{empheq}
+      \end{enumerate}
+  \end{enumerate}
+\end{solution}
 
 \section*{Problem 3.21}
 \addcontentsline{toc}{section}{Problem 3.21}
@@ -684,5 +876,90 @@ mechanically reversible processes:
 Calculate $Q$, $W$, $\Delta U$, and $\Delta H$ for all processes, and
 sketch the paths of all processes on a single $PV$ diagram.
 
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item
+      \begin{gather*}
+        T=\frac{PV}{R}\\
+        T=144334.86~\unit{ \kelvin }\\
+        Q=-W\\
+        Q=RT\ln\frac{P_{1}}{P_{2}}\\
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        \Delta H=\Delta U=0\\
+        Q=-2982.06~\unit{ \kilo\joule\per\mole }\\
+        W=2982.06~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+      $\Delta U$ and $\Delta H$ for all processes is 0.
+    \item
+      \begin{gather*}
+        V_{1.5}=\left( \frac{P_{1}V_{1}^{\gamma }}{P_{1.5}}
+        \right)^{1/\gamma }\\
+        V_{1.5}=2.70~\unit{ m\cubed\per\mole }\\
+        \intertext{After some derivation for the work:}
+        W = W_{1\to1.5}+W_{1.5\to2}\\
+        W_{1\to1.5}=-Rc\int_{V_{1}}^{V_{1.5}} V^{-\gamma } \, dV \qquad
+        \text{where} \qquad c = P_{1}V_{1}^{\gamma}\\
+        W_{1.5\to2}=-P_{2}\left( V_{2}-V_{1.5} \right)\\
+        Q=-W
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        W=2040.25~\unit{ \kilo\joule\per\mole }\\
+        Q=-2040.25~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+    \item
+      \begin{gather*}
+        P_{1.5}=\frac{P_{1}V_{1}^{\gamma }}{V_{1.5}^{\gamma }}\\
+        P_{1.5}=62.898~\unit{ \bar }\\
+        T_{1.5}=\frac{P_{1.5}V_{1.5}}{R}\\
+        T_{1.5}=756528.668~\unit{ \kelvin }\\
+        T_{2}= \frac{P_{2}V_{2}}{R}\\
+        T_{2}=144334.8569~\unit{ \kelvin }\\
+        W=W_{1\to1.5} = -c\int_{V_{1}}^{V_{1.5}} V^{-\gamma }
+        \, dV \qquad where
+        \qquad c=P_{1}V_{1}^{\gamma }\\
+        Q_{1\to1.5}=-W_{1\to1.5}\\
+        Q_{1.5\to2}=C_{V}\Delta T\\
+        Q=Q_{1\to1.5}+Q_{1.5\to2}
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        W=-1.645\times10^{7}~\unit{ \kilo\joule\per\mole }\\
+        Q=1.644\times10^{7}~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+    \item
+      \begin{gather*}
+        T=\frac{PV}{R}\\
+        T_{1}=T_{2}=144334.8569~\unit{ \kelvin }\\
+        T_{1.5}=1732018.282~\unit{ \kelvin }\\
+        Q_{1\to1.5}=C_{V}(T_{1.5}-T_{1})\\
+        Q_{1.5\to2}=C_{P}(T_{2}-T_{1.5})\\
+        Q=Q_{1\to1.5}+Q_{1.5\to2}\\
+        W=-P(V_{2}-V_{1.5})
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        Q=-13200~\unit{ \kilo\joule\per\mole }\\
+        W=13200~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+      It is much easier to do $W=-P(V_{2}-V_{1.5})$ and solving for $Q=-W$.
+    \item
+      \begin{gather*}
+        W=-P(V_{1.5}-V_{1})\\
+        Q=-W
+      \end{gather*}
+      \begin{empheq}[box=\widefbox]{gather*}
+        W=-1100~\unit{ \kilo\joule\per\mole }\\
+        Q=1100~\unit{ \kilo\joule\per\mole }
+      \end{empheq}
+  \end{enumerate}
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.5}{\input{graphics/s21.pgf}}
+    \caption{
+      PV graph of the five different paths as described in
+      Problem 3.21.
+    }
+    \label{fig:s21}
+  \end{figure}
+\end{solution}
 
 \end{document}
